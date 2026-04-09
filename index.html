@@ -32,14 +32,14 @@
     <header class="topbar" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 15px;">
   <button id="menu-btn" class="icon-btn" aria-label="Abrir menú" style="flex: 1; text-align: left; background: none; border: none; color: white; font-size: 24px;">☰</button>
   
-  <div class="brand" style="flex: 2; text-align: center;">
+  <div class="brand" style="flex: 2; text-align: center; display: flex; align-items: center; justify-content: center;">
     <img src="assets/logo%20fb.png" class="logo" style="width: 140px; height: auto; margin: 0 auto; display: block;">
   </div>
 
  <div style="flex: 1; text-align: right;">
-    <button id="open-cart" class="cart-btn" aria-label="Abrir carrito" style="position: relative; display: inline-block; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); border: 1px solid #00adef; border-radius: 8px; padding: 5px 10px; cursor: pointer;">
+    <button id="open-cart" class="cart-btn" aria-label="Abrir carrito" style="position: relative; display: inline-flex; align-items: center; background: linear-gradient(to right, #000000 0%, #00adef 100%); border: 1px solid #00adef; border-radius: 50px; padding: 6px 14px; cursor: pointer; color: white;">
       <span class="cart-ico" style="font-size: 20px; filter: brightness(0) invert(1);">🛒</span>
-      <span id="cart-count" class="cart-count" style="position: absolute; top: -8px; right: -8px; background: #00adef; color: #ffffff; border-radius: 50%; padding: 2px 7px; font-size: 11px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">0</span>
+      <span id="cart-count" class="cart-count" style="margin-left: 5px; font-weight: bold; font-size: 14px;">0</span>
     </button>
   </div>
 </header>
@@ -258,37 +258,39 @@
                 <option value="efectivo">Efectivo</option>
               </select>
             </label>
+<div id="side-menu" class="side-menu hidden" role="dialog" aria-modal="true" style="position: fixed; top: 0; left: -280px; width: 280px; height: 100vh; background: #000000; transition: left 0.3s ease-out; z-index: 1000; padding: 20px; border-right: 2px solid #00adef;">
+    <div class="side-menu-panel" style="background: transparent; border: none; padding: 0;">
 
-             <div id="transfer-info" class="hidden transfer-box">
-              <p><strong>La informacion:</strong> de banco</p>
-              <p><strong>la enviaremos: por whatsapp</strong>
-                <span id="account-number">feliz dia</span>
-                <!-- <button type="button" id="copy-account" class="copy-btn">Copiar</button> -->
-              </p>
-              <p><strong></strong></p>  
-                <!-- 🔹 QR de pago (Nequi + Bancolombia) 
-  <div class="qr-box">
+      <button id="close-menu" class="icon-btn close-menu" aria-label="Cerrar menú" style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: #00adef; font-size: 28px; cursor: pointer;">×</button>
 
-  <div class="qr-item">
-    <img src="images/qr-nequi.png" alt="QR Nequi" class="qr-img">
-    <p>
-      Nequi
-      <i class="fa-solid fa-download qr-download" data-img="images/qr-nequi.png"></i>
-    </p>
+      <div class="menu-logo" style="text-align: center; margin-top: 40px; margin-bottom: 30px; border-bottom: 1px solid #1a1a1a; padding-bottom: 20px;">
+        <img src="assets/logo%20fb.png" alt="Nextal Graphic" style="width: 160px; height: auto; margin: 0 auto; display: block;">
+      </div>
+
+      <ul class="social-links" style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 20px;">
+          <a href="https://wa.me/573045473672" target="_blank" style="display: flex; align-items: center; color: #ffffff; text-decoration: none; font-size: 18px; padding: 10px; border-radius: 8px;">
+            <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 24px; width: 35px;"></i>
+            <span>WhatsApp</span>
+          </a>
+        </li>
+        <li style="margin-bottom: 20px;">
+          <a href="https://www.instagram.com/nextalgraphic/" target="_blank" style="display: flex; align-items: center; color: #ffffff; text-decoration: none; font-size: 18px; padding: 10px; border-radius: 8px;">
+            <i class="fa-brands fa-instagram" style="color: #e4405f; font-size: 24px; width: 35px;"></i>
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li style="margin-bottom: 20px;">
+          <a href="#" target="_blank" style="display: flex; align-items: center; color: #ffffff; text-decoration: none; font-size: 18px; padding: 10px; border-radius: 8px;">
+            <i class="fa-brands fa-facebook" style="color: #1877f2; font-size: 24px; width: 35px;"></i>
+            <span>Facebook</span>
+          </a>
+        </li>
+      </ul>
+      
+      <p style="color: #666; font-size: 12px; text-align: center; margin-top: 50px;">Manizales, Colombia</p>
+    </div>
   </div>
-
-  <div class="qr-item">
-    <img src="images/qr-bancolombia.png" alt="QR Bancolombia" class="qr-img">
-    <p>
-      Bancolombia
-      <i class="fa-solid fa-download qr-download" data-img="images/qr-bancolombia.png"></i>
-    </p>
-  </div>
-
-</div>-->
-            </div>
-
-            <label>Notas (opcional)
               <textarea name="notes" rows="2" placeholder="Ej: Sin cebolla"></textarea>
             </label>
 
