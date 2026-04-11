@@ -11,16 +11,16 @@ const products = [
   {
     id: 'b1',
     category: 'hamburguesas', 
-    title: 'Tarjetas de Presentación',
+    title: 'Tarjetas',
     price: 8000,
     desc: 'Tarjetas full resolución, diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
-    image: 'Mockup Tarjetas de presentación',
+    image: 'assets/Tarjetas.png',
     ingredients: [], 
     sizes: [
-      { id: 't1', label: 'Tintas 1x0 / 1x1', price: 8000, image: 'assets/3Carnes.png' },
-      { id: 't2', label: 'Tintas 2x0 / 2x1', price: 10000, image: 'assets/3Carnes.png' },
-      { id: 't3', label: 'Tintas 4x0 / 4x1', price: 15000, image: 'assets/3Carnes.png' },
-      { id: 't4', label: 'Tintas 4x4', price: 18000, image: 'assets/3Carnes.png' }
+      { id: 't1', label: 'Tintas 1x0 / 1x1', price: 8000, image: 'assets/Tarjetas.png' },
+      { id: 't2', label: 'Tintas 2x0 / 2x1', price: 10000, image: 'assets/Tarjetas.png' },
+      { id: 't3', label: 'Tintas 4x0 / 4x1', price: 15000, image: 'assets/Tarjetas.png' },
+      { id: 't4', label: 'Tintas 4x4', price: 18000, image: 'assets/Tarjetas.png' }
     ]
   },
 
