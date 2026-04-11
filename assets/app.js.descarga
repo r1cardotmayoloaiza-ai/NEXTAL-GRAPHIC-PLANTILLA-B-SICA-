@@ -2098,84 +2098,72 @@ checkoutForm.addEventListener('change', updateCheckoutTotals);
 
 
 
-// Envío por WhatsApp
-checkoutForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const fd = new FormData(checkoutForm);
-  const clientName = fd.get('name')?.trim() || '';
-  const clientPhone = fd.get('phone')?.trim() || '';
-  const method = fd.get('method') || 'recoger';
-  const payment = fd.get('payment') || '';
-  const address = fd.get('address')?.trim() || '';
-  const notes = fd.get('notes')?.trim() || '';
-
-  let textParts = [];
-
-  // Cabecera
-  textParts.push('🧾 *Nuevo Pedido - Arepas Dog Burger 🍔✅*');
-  textParts.push(`👤 Cliente: ${clientName}`);
-  textParts.push(`📞 Teléfono: ${clientPhone}`);
-  textParts.push(`🚚 Tipo: ${method}`);
-  if (method === 'domicilio') textParts.push(`🏠 Dirección: ${address}`);
-  textParts.push(`💳 Pago: ${payment}`);
-  textParts.push('');
-  textParts.push('🎨 *Detalle del pedido:*');
-
-  let subtotal = 0;
-
-cart.forEach(item => {
-  // Calcular precio de extras individualmente
-  const extras = item.extras || [];
-  const extrasLines = extras
-    .map(e => `   ➕ ${e.qty}x ${e.name} ($${numberWithCommas(e.price * e.qty)})`)
-    .join('\n');
-
-  const extrasSum = extras.reduce((sum, e) => sum + e.price * e.qty, 0);
-
-  // 🔑 FIX: NO multiplicar extras por la cantidad del producto
-  const itemTotal = (item.price * item.qty) + extrasSum;
-  subtotal += itemTotal;
-
-  // Mostrar producto base
-  textParts.push(
-    `${item.qty}x ${item.title} — *$${numberWithCommas(item.price * item.qty)}*`
-  );
-
-  if (extrasLines) textParts.push(extrasLines);
-
-  // Toppings removidos
-  if (item.removed && item.removed.length) {
-    textParts.push(`   ⚠️ Toppings removidos: ${item.removed.join(', ')}`);
-  }
-});
-
-  const delivery = method === 'domicilio' ? DELIVERY_FEE : 0;
-  const total = subtotal + delivery;
-
-  // Resumen de totales
-  textParts.push('');
-  textParts.push(`🧮 Subtotal: $${numberWithCommas(subtotal)}`);
-  textParts.push(method === 'domicilio'
-    ? `🚗 Envío: $${numberWithCommas(delivery)}`
-    : '🏪 Envío: Sin costo (recoge en el local)');
-  textParts.push(`💰 *Total: $${numberWithCommas(total)}*`);
-
-  if (notes) textParts.push(`📝 Notas: ${notes}`);
-
-  // Construir URL para WhatsApp
-  const bp = String(BUSINESS_PHONE || '').replace(/\D/g, '');
-  if (!bp || bp.length < 8) {
-    alert('Configura BUSINESS_PHONE en app.js con el número del negocio.');
-    return;
-  }
-
-  const msg = encodeURIComponent(textParts.join('\n'));
-  const waUrl = `https://wa.me/${bp}?text=${msg}`;
-
-  window.open(waUrl, '_blank');
-});
-
+  // Envío por WhatsApp
+  checkoutForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    const fd = new FormData(checkoutForm);
+    const clientName = fd.get('name')?.trim() || '';
+    const clientPhone = fd.get('phone')?.trim() || '';
+    const payment = fd.get('payment') || 'Transferencia';
+    const notes = fd.get('notes')?.trim() || '';
+  
+    let textParts = [];
+  
+    // Cabecera Corporativa
+    textParts.push(`🎨 *Nuevo Proyecto de Diseño - Nextal Graphic* 🚀`);
+    textParts.push(`👤 Cliente: ${clientName}`);
+    textParts.push(`📞 WhatsApp: ${clientPhone}`);
+    textParts.push(`📂 Tipo de Entrega: Envío Digital (Correo/Drive)`);
+    textParts.push(`💳 Método de Pago: ${payment}`);
+    textParts.push('');
+    textParts.push(`📝 *Detalle del Proyecto:*`);
+  
+    let subtotal = 0;
+  
+    cart.forEach(item => {
+      // Sumar posibles Adiciones extra a la Variedad elegida
+      const extrasTotal = (item.extras || []).reduce((acc, current) => acc + (current.price * current.qty), 0);
+      const itemTotal = (item.price + extrasTotal) * item.qty;
+      subtotal += itemTotal;
+  
+      // Imprimir Producto ("1x Tarjetas de Presentación (Tintas 4x4) - $18.000")
+      textParts.push(`${item.qty}x ${item.title} (${item.sizeLabel || 'Básico'}) — *$${numberWithCommas(itemTotal)}*`);
+      
+      // Agregados fijos de Imprenta
+      textParts.push(`   Formato: PDF para imprenta + Editable (.AI)`);
+      textParts.push(`   Modo de Color: CMYK (Alta fidelidad)`);
+      
+      // Si el cliente agregó adiciones extra con botones [- 1 +], saldrán acá
+      const extrasLines = (item.extras || [])
+        .map(e => `   ➕ ${e.qty}x ${e.name} (+$${numberWithCommas(e.price * e.qty)})`)
+        .join('\n');
+      if (extrasLines) textParts.push(extrasLines);
+    });
+  
+    textParts.push('');
+    textParts.push(`💰 Subtotal: $${numberWithCommas(subtotal)}`);
+    textParts.push(`✅ *Total: $${numberWithCommas(subtotal)}*`);
+  
+    // Sección de Notas (Brief)
+    if (notes) {
+      textParts.push('');
+      textParts.push(`📌 *Notas del Brief:*`);
+      textParts.push(`> "${notes}"`);
+    }
+  
+    // Construir URL para WhatsApp
+    const bp = String(BUSINESS_PHONE || '').replace(/\D/g, '');
+    if (!bp || bp.length < 8) {
+      alert('Configura BUSINESS_PHONE en app.js con el número del negocio.');
+      return;
+    }
+  
+    const msg = encodeURIComponent(textParts.join('\n'));
+    const waUrl = `https://wa.me/${bp}?text=${msg}`;
+  
+    window.open(waUrl, '_blank');
+  });
 
 
 
