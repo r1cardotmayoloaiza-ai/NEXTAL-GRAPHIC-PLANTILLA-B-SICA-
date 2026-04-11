@@ -63,7 +63,7 @@
     color: #00adef !important; 
   }
 
-  /* 9. Elementos finales de la pantalla de pago (Cliente y Selección) */
+  /* 9. Elementos finales de la pantalla de pago */
   #client-summary, 
   select#payment-method {
     background: #00adef !important;
@@ -85,10 +85,11 @@
     background: #00adef !important;
     border-color: #00adef !important;
     color: #ffffff !important;
-  } /* ESTA ERA LA LLAVE QUE TE FALTABA jajaja */
+  } 
 
-  /* 12. Ocultar los precios de portada y volver el botón GIGANTE al 100% */
-  .card .price {
+  /* 12. Ocultar los precios y volver el botón GIGANTE al 100% */
+  .card .price,
+  .add-btn .price { /* <-- Esto sí desaparecerá el $18.000 del modal! */
     display: none !important;
   }
   .card .meta {
@@ -99,7 +100,32 @@
     padding: 12px !important;
     font-size: 16px !important;
   }
+
+  /* 13. Convertir las "Variedades" en hermosas cajas individuales */
+  .size-selector {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important; /* Separación entre cada borde */
+    margin-top: 15px !important;
+  }
+
+  .size-option {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 15px 20px !important;
+    border-radius: 10px !important;
+    box-sizing: border-box !important;
+    font-size: 15px !important;
+    cursor: pointer !important;
+  }
+
+  .size-option input[type="radio"] {
+    margin-right: 15px !important;
+    transform: scale(1.4) !important; /* Hacer el circulito más notorio */
+  }
 </style>
+
 
 
 
