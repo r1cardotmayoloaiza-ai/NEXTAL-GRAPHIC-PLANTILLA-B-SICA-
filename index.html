@@ -85,18 +85,22 @@
     background: #00adef !important;
     border-color: #00adef !important;
     color: #ffffff !important;
- 
-     /* 12. Ocultar el precio en la cuadrícula principal y en el botón del modal */
-  .card .price,
-  .add-btn .price {
+  } /* ESTA ERA LA LLAVE QUE TE FALTABA jajaja */
+
+  /* 12. Ocultar los precios de portada y volver el botón GIGANTE al 100% */
+  .card .price {
     display: none !important;
   }
-  
   .card .meta {
-    justify-content: center !important;
+    display: block !important;
   }
-
+  .card .add {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 16px !important;
+  }
 </style>
+
 
 
 
