@@ -186,17 +186,19 @@ const products = [
     },
 
 
+    {
+      id: 's1',
+      category: 'hamburguesas', 
+      title: 'Sello Corporativo',
+      price: 5000,
+      desc: 'Sello con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Sello.png',
+      ingredients: [], 
+      sizes: [
+        { id: 's1_op1', label: 'Tintas 1x0', price: 5000, image: 'assets/Sello.png' }
+      ]
+    },
 
-  { 
-    id: 'b11',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Filete de Pollo',
-    price: 18000,
-    desc: 'Pan brioche, filete de pollo, queso, tocineta, ensalada, tomate y salsa de la casa.',
-    image: 'images/hamburgesa11.png',
-    ingredients: ['Pan Brioche','Filete de Pollo','Queso','Cebolla','Ensalada','Tomate','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
 
   { 
     id: 'b12',
