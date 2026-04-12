@@ -225,6 +225,22 @@ const products = [
       ]
     },
 
+    {
+      id: 'tl1',
+      category: 'hamburguesas', 
+      title: 'Talonario',
+      price: 10000,
+      desc: 'Talonario con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Talonario.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'tl1_op1', label: 'Tintas 1x0', price: 10000, image: 'assets/Talonario.png' },
+        { id: 'tl1_op2', label: 'Tintas 2x0', price: 12000, image: 'assets/Talonario.png' },
+        { id: 'tl1_op3', label: 'Tintas 4x0', price: 15000, image: 'assets/Talonario.png' }
+      ]
+    },
+
+
 
   // === PERROS ===
 {  
