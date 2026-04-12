@@ -158,16 +158,19 @@ const products = [
     },
 
 
-  { 
-    id: 'b9',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Quesuda',
-    price: 19000,
-    desc: 'Pan brioche, carne artesanal, queso, tocineta, aros de cebolla, ensalada, tomate y salsa de la casa cubierta de queso.',
-    image: 'images/hamburgesa9.png',
-    ingredients: ['Pan Brioche','Carne Artesanal','Doble queso','Cebolla','Ensalada','Tomate','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+     {
+      id: 'br1',
+      category: 'hamburguesas', 
+      title: 'Brochure',
+      price: 40000,
+      desc: 'Brochure con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Brochure.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'br1_op1', label: 'Tintas 4x4', price: 40000, image: 'assets/Brochure.png' }
+      ]
+    },
+
 
   { 
     id: 'b10',
