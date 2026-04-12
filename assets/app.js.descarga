@@ -282,6 +282,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'et1',
+      category: 'hamburguesas', 
+      title: 'Etiqueta',
+      price: 14000,
+      desc: 'Etiqueta con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Etiqueta.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'et1_op1', label: 'Tintas 1x0 / 1x1', price: 14000, image: 'assets/Etiqueta.png' },
+        { id: 'et1_op2', label: 'Tintas 4x0 / 4x4', price: 20000, image: 'assets/Etiqueta.png' }
+      ]
+    },
 
 
 
