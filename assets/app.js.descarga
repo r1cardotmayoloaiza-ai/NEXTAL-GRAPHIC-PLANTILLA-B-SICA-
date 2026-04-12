@@ -212,6 +212,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'eb1',
+      category: 'hamburguesas', 
+      title: 'Estampado / Bordado',
+      price: 12000,
+      desc: 'Estampado con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Estampado.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'eb1_op1', label: 'Tintas 4x0', price: 12000, image: 'assets/Estampado.png' }
+      ]
+    },
+
+
   // === PERROS ===
 {  
   id: 'p1',
