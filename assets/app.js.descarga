@@ -43,16 +43,21 @@ const products = [
     },
 
 
-  { 
-    id: 'b2',
-    category: 'hamburguesas',
-    title: 'Hamburguesa TociBurger',
-    price: 26500,
-    desc: 'Pan brioche, lechuga, guacamole, tomate, carne artesanal, queso mozzarella, maduritos, trozos de tocino, salsa de la casa y cebolla caramelizada.',
-    image: 'images/TociBurger.png',
-    ingredients: ['Pan Brioche','Lechuga','Guacamole','Tomate','Carne Artesanal','Queso Mozzarella','Maduritos','Trozos de tocino','Salsa de la casa','Cebolla caramelizada'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+      {
+      id: 'pl1',
+      category: 'hamburguesas', 
+      title: 'Plegable 3 cuerpos',
+      price: 20000,
+      desc: 'Plegables 3 cuerpos con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Plegable3.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'pl1_op1', label: 'Tinta 1x1', price: 20000, image: 'Plegable3.png' },
+        { id: 'pl1_op2', label: 'Tinta 2x2', price: 25000, image: 'assets/Plegable3.png' },
+        { id: 'pl1_op3', label: 'Tinta 4x4', price: 40000, image: 'assets/Plegable3.png' }
+      ]
+    },
+
 
   { 
     id: 'b3',
