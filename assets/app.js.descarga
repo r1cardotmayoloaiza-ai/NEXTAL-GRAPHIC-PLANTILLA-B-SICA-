@@ -268,6 +268,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'cm1',
+      category: 'hamburguesas', 
+      title: 'Carta Menú Hoja Carta Ambas Caras',
+      price: 20000,
+      desc: 'Carta Menú con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Cartamenu.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'cm1_op1', label: 'Tintas 1x1', price: 20000, image: 'assets/Cartamenu.png' },
+        { id: 'cm1_op2', label: 'Tintas 4x4', price: 35000, image: 'assets/Cartamenu.png' }
+      ]
+    },
 
 
 
