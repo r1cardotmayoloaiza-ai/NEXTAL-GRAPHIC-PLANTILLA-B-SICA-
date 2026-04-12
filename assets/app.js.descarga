@@ -116,16 +116,19 @@ const products = [
       ]
     },
 
-  { 
-    id: 'b7',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Doble Carne',
-    price: 22000,
-    desc: 'Pan brioche, doble carne artesanal, queso, pollo desmechado, tocineta, cebolla, ensalada, tomate y salsa de la casa.',
-    image: 'images/DobleCarne.png',
-    ingredients: ['Pan Brioche','Carne Artesanal x2','Queso','Cebolla','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+    {
+      id: 'cd1',
+      category: 'hamburguesas', 
+      title: 'Catálogo: Digital / Impreso',
+      price: 80000,
+      desc: 'Catalogo con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Catalogo.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'cd1_op1', label: 'Tintas 2x0', price: 80000, image: 'assets/Catalogo.png' }
+      ]
+    },
+
 
   { 
     id: 'b8',
