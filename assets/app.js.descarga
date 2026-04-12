@@ -336,6 +336,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'inv1',
+      category: 'hamburguesas', 
+      title: 'Invitación',
+      price: 10000,
+      desc: 'Invitación con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Invitacion.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'inv1_op1', label: 'Tintas 1x0', price: 10000, image: 'assets/Invitacion.png' },
+        { id: 'inv1_op2', label: 'Tintas 4x4', price: 20000, image: 'assets/Invitacion.png' }
+      ]
+    },
 
 
 
