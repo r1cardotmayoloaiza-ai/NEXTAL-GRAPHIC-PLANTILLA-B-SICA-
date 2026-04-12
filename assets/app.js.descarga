@@ -130,16 +130,19 @@ const products = [
     },
 
 
-  { 
-    id: 'b8',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Paisa',
-    price: 21000,
-    desc: 'Pan brioche, carne artesanal, pollo desmechado, queso, tocineta, maicitos, salchicha ranchera, ensalada, tomate, salsa de la casa y aros de cebolla.',
-    image: 'images/paisa.png',
-    ingredients: ['Pan Brioche','Carne Artesanal','Pollo desmechado','Queso','Tocineta','Salsa tártara','Cebolla grille'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+    {
+      id: 'a1',
+      category: 'hamburguesas', 
+      title: 'Agenda Corporativa',
+      price: 35000,
+      desc: 'Agendas con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Agenda.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'a1_op1', label: 'Tintas 2x0', price: 35000, image: 'assets/Agenda.png' }
+      ]
+    },
+
 
   { 
     id: 'b14',
