@@ -172,16 +172,20 @@ const products = [
     },
 
 
-  { 
-    id: 'b10',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Mixta',
-    price: 19000,
-    desc: 'Pan brioche, carne artesanal, pollo desmechado, queso, tocineta, ensalada, tomate y salsa de la casa.',
-    image: 'images/mixta.png',
-    ingredients: ['Pan Brioche','Filete de Pollo','Carne Artesanal','Queso','Tomate','Ensalada','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+     {
+      id: 'cn1',
+      category: 'hamburguesas', 
+      title: 'Carnet',
+      price: 15000,
+      desc: 'Carnet con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/AQUI_TU_FOTO.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'cn1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Carnet.png' }
+      ]
+    },
+
+
 
   { 
     id: 'b11',
