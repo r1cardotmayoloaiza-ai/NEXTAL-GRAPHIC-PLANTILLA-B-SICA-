@@ -322,6 +322,21 @@ const products = [
       ]
     },
 
+    {
+      id: 'al1',
+      category: 'hamburguesas', 
+      title: 'Almanaque',
+      price: 10000,
+      desc: 'Almanaque con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Almanaque.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'al1_op1', label: 'Tintas 1x0 / 2x0', price: 10000, image: 'assets/Almanaque.png' },
+        { id: 'al1_op2', label: 'Tintas 4x0', price: 20000, image: 'assets/Almanaque.png' }
+      ]
+    },
+
+
 
 
   // === PERROS ===
