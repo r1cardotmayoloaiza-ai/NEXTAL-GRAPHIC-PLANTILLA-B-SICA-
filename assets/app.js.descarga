@@ -636,6 +636,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'ev1',
+      category: 'hamburguesas', 
+      title: 'Edición de Video',
+      price: 42000,
+      desc: 'Edición de video profesional con acabados de alta calidad. Optimizado para redes sociales, publicidad y plataformas digitales.',
+      image: 'assets/Video.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'ev1_op1', label: 'Tintas 2x0', price: 42000, image: 'assets/Video.png' }
+      ]
+    },
+
 
 
   // === PERROS ===
