@@ -454,6 +454,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'pe1',
+      category: 'hamburguesas', 
+      title: 'Pendón',
+      price: 15000,
+      desc: 'Pendon profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Pendon.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'pe1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Pendon.png' }
+      ]
+    },
+
 
 
 
