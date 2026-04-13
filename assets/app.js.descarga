@@ -597,6 +597,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'bt1',
+      category: 'hamburguesas', 
+      title: 'Botón',
+      price: 12000,
+      desc: 'Botón profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Boton.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'bt1_op1', label: 'Tintas 4x0', price: 12000, image: 'assets/Boton.png' }
+      ]
+    },
 
 
 
