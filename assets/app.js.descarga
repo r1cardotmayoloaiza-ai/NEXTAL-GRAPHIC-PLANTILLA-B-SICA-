@@ -363,6 +363,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'dip1',
+      category: 'hamburguesas', 
+      title: 'Diploma / Certificado',
+      price: 15000,
+      desc: 'Diploma con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Diploma.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'dip1_op1', label: 'Tintas 2x0', price: 15000, image: 'assets/Diploma.png' }
+      ]
+    },
+
+
 
 
 
