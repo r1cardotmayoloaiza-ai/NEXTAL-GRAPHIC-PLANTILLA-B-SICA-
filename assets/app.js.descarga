@@ -428,6 +428,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'lo3',
+      category: 'hamburguesas', 
+      title: 'Redibujo de Logo',
+      price: 20000,
+      desc: 'Logo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Redibujo.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'lo3_op1', label: 'Tintas 4x0', price: 20000, image: 'assets/Redibujo.png' }
+      ]
+    },
 
 
 
