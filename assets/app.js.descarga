@@ -389,6 +389,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'ar1',
+      category: 'hamburguesas', 
+      title: 'Anuncio Revista 1/4 de Página',
+      price: 15000,
+      desc: 'Revista con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Revista1.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'ar1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Revista1.png' }
+      ]
+    },
+
+
 
 
 
