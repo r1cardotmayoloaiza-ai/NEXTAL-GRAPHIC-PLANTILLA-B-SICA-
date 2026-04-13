@@ -675,6 +675,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'bf1',
+      category: 'hamburguesas', 
+      title: 'Banner Fijo Web',
+      price: 30000,
+      desc: 'Banner fijo profesional optimizado para web. Archivos en alta resolución y formatos listos para ecosistemas digitales.',
+      image: 'assets/Banner1.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'bf1_op1', label: 'Tintas 4x4', price: 30000, image: 'assets/Banner1.png' }
+      ]
+    },
 
 
 
