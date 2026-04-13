@@ -649,6 +649,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'pj1',
+      category: 'hamburguesas', 
+      title: 'Personaje',
+      price: 70000,
+      desc: 'Creación de personaje corporativo. Diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Personaje.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'pj1_op1', label: 'Tintas 4x0', price: 70000, image: 'assets/Personaje.png' }
+      ]
+    },
+
 
 
   // === PERROS ===
