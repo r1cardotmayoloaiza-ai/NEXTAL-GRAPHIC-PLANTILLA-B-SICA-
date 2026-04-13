@@ -480,6 +480,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'adh1',
+      category: 'hamburguesas', 
+      title: 'Adhesivo',
+      price: 15000,
+      desc: 'Adhesivo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Adhesivo.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'adh1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Adhesivo.png' }
+      ]
+    },
+
 
 
 
