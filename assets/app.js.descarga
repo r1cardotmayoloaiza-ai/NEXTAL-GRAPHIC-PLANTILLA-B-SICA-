@@ -506,6 +506,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'rt1',
+      category: 'hamburguesas', 
+      title: 'Rompe Tráfico',
+      price: 15000,
+      desc: 'Rompe tráfico profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Rompe.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'rt1_op1', label: 'Tintas 4x4', price: 15000, image: 'assets/Rompe.png' }
+      ]
+    },
 
 
 
