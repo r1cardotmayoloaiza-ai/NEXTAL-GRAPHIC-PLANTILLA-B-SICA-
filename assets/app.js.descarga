@@ -532,6 +532,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'infa1',
+      category: 'hamburguesas', 
+      title: 'Infografía',
+      price: 70000,
+      desc: 'Infografía profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Infografia.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'infa1_op1', label: 'Tintas 4x0', price: 70000, image: 'assets/Infografia.png' }
+      ]
+    },
+
 
 
   // === PERROS ===
