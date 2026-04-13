@@ -623,6 +623,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'sen1',
+      category: 'hamburguesas', 
+      title: 'Señalización',
+      price: 8000,
+      desc: 'Señalizacion profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Señalizacion.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'sen1_op1', label: 'Tintas 4x0', price: 8000, image: 'assets/Señalizacion.png' }
+      ]
+    },
+
 
 
   // === PERROS ===
