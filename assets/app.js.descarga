@@ -545,6 +545,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'mp1',
+      category: 'hamburguesas', 
+      title: 'Microperforado',
+      price: 15000,
+      desc: 'Microperforado profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Microperforado.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'mp1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Microperforado.png' }
+      ]
+    },
+
+
 
 
   // === PERROS ===
