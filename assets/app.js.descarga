@@ -519,6 +519,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'va1',
+      category: 'hamburguesas', 
+      title: 'Valla',
+      price: 25000,
+      desc: 'Valla profesional optimizada para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Valla.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'va1_op1', label: 'Tintas 4x0', price: 25000, image: 'assets/Valla.png' }
+      ]
+    },
 
 
 
