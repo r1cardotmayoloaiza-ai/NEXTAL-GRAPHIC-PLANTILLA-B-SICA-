@@ -467,6 +467,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'pas1',
+      category: 'hamburguesas', 
+      title: 'Pasacalle',
+      price: 15000,
+      desc: 'Pasacalle profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Pasacalle.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'pas1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Pasacalle.png' }
+      ]
+    },
 
 
 
