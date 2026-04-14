@@ -11,9 +11,9 @@ const products = [
   {
     id: 'b1',
     category: 'hamburguesas', 
-    title: 'Tarjetas',
+    title: 'Tarjetas de Presentación',
     price: 8000,
-    desc: 'Tarjetas full resolución, diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+    desc: 'Tu primera impresión en papel. Diseñamos tarjetas de alto impacto que proyectan autoridad y profesionalismo en cada encuentro de negocios.',
     image: 'assets/Tarjetas.png',
     ingredients: [], 
     sizes: [
@@ -29,9 +29,9 @@ const products = [
      {
       id: 'v1',
       category: 'hamburguesas', 
-      title: 'Volantes',
+      title: 'Volantes Publicitarios',
       price: 10000,
-      desc: 'Volantes con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Publicidad directa y efectiva. Piezas gráficas diseñadas para capturar la atención de tus clientes potenciales y comunicar tus ofertas con total claridad.',
       image: 'assets/Volantes.png',
       ingredients: [], 
       sizes: [
@@ -48,11 +48,11 @@ const products = [
       category: 'hamburguesas', 
       title: 'Plegable 3 cuerpos',
       price: 20000,
-      desc: 'Plegables 3 cuerpos con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Toda tu oferta en la palma de la mano. Organizamos tu información de forma estratégica para que tu catálogo sea fácil de leer y altamente vendedor.',
       image: 'assets/Plegable3.png',
       ingredients: [], 
       sizes: [
-        { id: 'pl1_op1', label: 'Tinta 1x1', price: 20000, image: 'Plegable3.png' },
+        { id: 'pl1_op1', label: 'Tinta 1x1', price: 20000, image: 'assets/Plegable3.png' },
         { id: 'pl1_op2', label: 'Tinta 2x2', price: 25000, image: 'assets/Plegable3.png' },
         { id: 'pl1_op3', label: 'Tinta 4x4', price: 40000, image: 'assets/Plegable3.png' }
       ]
@@ -62,9 +62,9 @@ const products = [
     {
       id: 'c1',
       category: 'hamburguesas', 
-      title: 'Carpetas Corporativas',
+      title: 'Carpeta',
       price: 20000,
-      desc: 'Carpeta con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Organización con estilo corporativo. Protege tus propuestas y documentos importantes con un diseño que refuerza la seriedad de tu marca.',
       image: 'assets/Carpeta.png',
       ingredients: [], 
       sizes: [
@@ -78,13 +78,13 @@ const products = [
     {
       id: 'm1',
       category: 'hamburguesas', 
-      title: 'Membrete Oficio/Carta',
+      title: 'Membrete OFICIO/CARTA',
       price: 20000,
-      desc: 'Hojas membretadas con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Papelería que genera confianza. Dale un respaldo institucional a tus facturas y comunicaciones oficiales con un diseño sobrio y elegante.',
       image: 'assets/Membrete.png',
       ingredients: [], 
       sizes: [
-        { id: 'm1_op1', label: 'Tintas 4x0', price: 20000, image: 'assets/AQUI_TU_FOTO.png' }
+        { id: 'm1_op1', label: 'Tintas 4x0', price: 20000, image: 'assets/Membrete.png' }
       ]
     },
 
@@ -92,9 +92,9 @@ const products = [
      {
       id: 'd1',
       category: 'hamburguesas', 
-      title: 'Diseño Editorial',
+      title: 'Diseño editorial',
       price: 80000,
-      desc: 'Diseño editorial profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Maquetación profesional para publicaciones complejas. Equilibramos estética y lectura para libros, folletos o informes corporativos de alta calidad.',
       image: 'assets/Editorial.png',
       ingredients: [], 
       sizes: [
@@ -108,7 +108,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Revista Digital',
       price: 80000,
-      desc: 'Revista digital con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Interactividad y diseño moderno. Convierte tu contenido en una experiencia digital fluida, ideal para compartir en plataformas web y dispositivos móviles.',
       image: 'assets/Revista.png',
       ingredients: [], 
       sizes: [
@@ -119,9 +119,9 @@ const products = [
     {
       id: 'cd1',
       category: 'hamburguesas', 
-      title: 'Catálogo: Digital / Impreso',
+      title: 'Catalogo Digital/Impreso',
       price: 80000,
-      desc: 'Catalogo con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'La vitrina perfecta para tus productos. Diseños estructurados para facilitar la navegación del cliente y potenciar la decisión de compra.',
       image: 'assets/Catalogo.png',
       ingredients: [], 
       sizes: [
@@ -133,9 +133,9 @@ const products = [
     {
       id: 'a1',
       category: 'hamburguesas', 
-      title: 'Agenda Corporativa',
+      title: 'Agenda',
       price: 35000,
-      desc: 'Agendas con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Tu marca presente todo el año. Diseñamos agendas personalizadas que combinan funcionalidad con una identidad visual impecable.',
       image: 'assets/Agenda.png',
       ingredients: [], 
       sizes: [
@@ -149,7 +149,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Libro Impreso / Digital',
       price: 350000,
-      desc: 'Libros con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Producción editorial completa. Desde la portada hasta la última página, garantizamos un acabado profesional listo para imprenta o publicación digital.',
       image: 'assets/Libro.png',
       ingredients: [], 
       sizes: [
@@ -163,7 +163,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Brochure',
       price: 40000,
-      desc: 'Brochure con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Tu portafolio de servicios en un solo lugar. Un diseño premium creado específicamente para convencer a tus clientes y cerrar negocios de alto valor.',
       image: 'assets/Brochure.png',
       ingredients: [], 
       sizes: [
@@ -177,7 +177,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Carnet',
       price: 15000,
-      desc: 'Carnet con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Identidad y seguridad para tu equipo. Diseño de identificaciones corporativas con una estética moderna, limpia y fácil de reconocer.',
       image: 'assets/Carnet.png',
       ingredients: [], 
       sizes: [
@@ -189,9 +189,9 @@ const products = [
     {
       id: 's1',
       category: 'hamburguesas', 
-      title: 'Sello Corporativo',
+      title: 'Sello',
       price: 5000,
-      desc: 'Sello con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Personalidad en cada documento. Diseñamos la imagen de tu sello seco o entintado para que tu firma de marca sea siempre nítida y profesional.',
       image: 'assets/Sello.png',
       ingredients: [], 
       sizes: [
@@ -202,9 +202,9 @@ const products = [
     {
       id: 'mg1',
       category: 'hamburguesas', 
-      title: 'Mug Personalizado',
+      title: 'Mug',
       price: 15000,
-      desc: 'Mug con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Tu marca en el día a día. Diseños creativos para tazas personalizadas que funcionan como el regalo corporativo perfecto o material de oficina.',
       image: 'assets/Taza.png',
       ingredients: [], 
       sizes: [
@@ -215,9 +215,9 @@ const products = [
     {
       id: 'eb1',
       category: 'hamburguesas', 
-      title: 'Estampado / Bordado',
+      title: 'Estampado/Bordado',
       price: 12000,
-      desc: 'Estampado con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Identidad textil de alta calidad. Adaptamos tu logo para prendas de vestir, asegurando que el diseño mantenga su fuerza visual en cualquier tela.',
       image: 'assets/Estampado.png',
       ingredients: [], 
       sizes: [
@@ -230,7 +230,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Talonario',
       price: 10000,
-      desc: 'Talonario con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Control y orden con imagen profesional. Diseñamos tus formatos de cuentas, recibos o facturas para que cada transacción hable bien de tu negocio.',
       image: 'assets/Talonario.png',
       ingredients: [], 
       sizes: [
@@ -245,7 +245,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Boleta',
       price: 12000,
-      desc: 'Boleta con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Diseño de entradas y tickets. Creamos piezas seguras y visualmente atractivas para tus eventos, rifas o controles de acceso.',
       image: 'assets/Boleta.png',
       ingredients: [], 
       sizes: [
@@ -259,7 +259,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Individual',
       price: 12000,
-      desc: 'Individual con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Higiene y marca en cada mesa. Diseños personalizados para restaurantes que acompañan la experiencia del cliente mientras refuerzan tu identidad visual.',
       image: 'assets/Individual.png',
       ingredients: [], 
       sizes: [
@@ -273,7 +273,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Carta Menú Hoja Carta Ambas Caras',
       price: 20000,
-      desc: 'Carta Menú con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Diseño que despierta el apetito. Organizamos tu oferta gastronómica de forma clara y atractiva para mejorar la experiencia de tus comensales.',
       image: 'assets/Cartamenu.png',
       ingredients: [], 
       sizes: [
@@ -287,7 +287,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Etiqueta',
       price: 14000,
-      desc: 'Etiqueta con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'El detalle que eleva tu producto. Diseños que resaltan las cualidades de lo que vendes y mejoran la percepción de calidad en el empaque.',
       image: 'assets/Etiqueta.png',
       ingredients: [], 
       sizes: [
@@ -301,7 +301,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Etiqueta para Botella',
       price: 20000,
-      desc: 'Etiqueta con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Presentación premium para líquidos. Diseños resistentes y visualmente potentes que hacen que tu envase destaque en cualquier estantería.',
       image: 'assets/Etiqueta1.png',
       ingredients: [], 
       sizes: [
@@ -314,7 +314,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Sticker',
       price: 15000,
-      desc: 'Sticker con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Tu marca en todas partes. Diseños versátiles y creativos para empaques, regalos o promociones que tus clientes amarán pegar.',
       image: 'assets/Sticker.png',
       ingredients: [], 
       sizes: [
@@ -327,7 +327,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Almanaque',
       price: 10000,
-      desc: 'Almanaque con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Visibilidad garantizada los 365 días del año. Diseñamos calendarios publicitarios que tus clientes querrán tener siempre a la vista.',
       image: 'assets/Almanaque.png',
       ingredients: [], 
       sizes: [
@@ -341,7 +341,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Invitación',
       price: 10000,
-      desc: 'Invitación con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'El inicio de un evento inolvidable. Diseños elegantes y personalizados que transmiten la importancia de tu celebración desde el primer contacto.',
       image: 'assets/Invitacion.png',
       ingredients: [], 
       sizes: [
@@ -355,7 +355,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Invitación Fotográfica',
       price: 15000,
-      desc: 'Invitación fotográfica con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Recuerdos que invitan. Combinamos tus mejores fotografías con diseño gráfico profesional para eventos sociales o corporativos cercanos.',
       image: 'assets/Fotografica.png',
       ingredients: [], 
       sizes: [
@@ -368,7 +368,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Diploma / Certificado',
       price: 15000,
-      desc: 'Diploma con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Reconocimiento con distinción. Diseños memorables para logros académicos o laborales que los destinatarios se sentirán orgullosos de exhibir.',
       image: 'assets/Diploma.png',
       ingredients: [], 
       sizes: [
@@ -381,7 +381,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Afiche',
       price: 15000,
-      desc: 'Afiche con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Haz que nadie pase de largo. Carteles de gran impacto visual diseñados para captar la atención en puntos estratégicos y eventos masivos.',
       image: 'assets/Afiche.png',
       ingredients: [], 
       sizes: [
@@ -394,7 +394,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Anuncio Revista 1/4 de Página',
       price: 15000,
-      desc: 'Revista con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Publicidad compacta y potente. Aprovechamos cada centímetro para que tu marca destaque dentro de publicaciones editoriales y medios impresos.',
       image: 'assets/Revista1.png',
       ingredients: [], 
       sizes: [
@@ -407,7 +407,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Logo 1 Propuesta',
       price: 70000,
-      desc: 'Logo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'La esencia de tu negocio. Un concepto creativo único, sólido y profesional para marcas que buscan una identidad directa y efectiva.',
       image: 'assets/Logo1.png',
       ingredients: [], 
       sizes: [
@@ -420,7 +420,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Logo 3 Propuestas',
       price: 150000,
-      desc: 'Logo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Explora el potencial de tu marca. Tres caminos creativos distintos para que elijas la identidad visual que mejor conecta con tu visión empresarial.',
       image: 'assets/Logo2.png',
       ingredients: [], 
       sizes: [
@@ -433,7 +433,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Redibujo de Logo',
       price: 20000,
-      desc: 'Logo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Recupera la calidad de tu imagen. Digitalizamos y vectorizamos tu logo antiguo para que luzca perfecto y nítido en cualquier tamaño o formato.',
       image: 'assets/Redibujo.png',
       ingredients: [], 
       sizes: [
@@ -446,7 +446,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Social Media Post',
       price: 20000,
-      desc: 'Post profesional optimizado para Redes sociales.',
+      desc: 'Contenido que genera clicks. Piezas gráficas optimizadas para redes sociales que profesionalizan tu perfil y aumentan el compromiso de tu audiencia.',
       image: 'assets/Post.png',
       ingredients: [], 
       sizes: [
@@ -459,7 +459,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Pendón',
       price: 15000,
-      desc: 'Pendon profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Tu marca en grande. Diseños claros y potentes para exhibición vertical, ideales para locales comerciales, ferias y eventos corporativos.',
       image: 'assets/Pendon.png',
       ingredients: [], 
       sizes: [
@@ -472,7 +472,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Pasacalle',
       price: 15000,
-      desc: 'Pasacalle profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Exposición máxima en exteriores. Mensajes directos y visuales resistentes diseñados para ser leídos rápidamente en espacios abiertos.',
       image: 'assets/Pasacalle.png',
       ingredients: [], 
       sizes: [
@@ -485,7 +485,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Adhesivo',
       price: 15000,
-      desc: 'Adhesivo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Publicidad que se pega. Diseños de gran formato para vitrinas, paredes o superficies planas que transforman cualquier espacio en un anuncio.',
       image: 'assets/Adhesivo.png',
       ingredients: [], 
       sizes: [
@@ -498,7 +498,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Corte Vinilo',
       price: 15000,
-      desc: 'Corte Vinilo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Precisión gráfica para tus espacios. Diseños vectoriales listos para corte, ideales para señalética, decoración de locales o rotulación de vehículos.',
       image: 'assets/Vinilo.png',
       ingredients: [], 
       sizes: [
@@ -511,7 +511,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Rompe Tráfico',
       price: 15000,
-      desc: 'Rompe tráfico profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Detén el paso de tus clientes. Publicidad llamativa diseñada para sobresalir en pasillos y guiar la mirada directamente hacia tu producto.',
       image: 'assets/Rompe.png',
       ingredients: [], 
       sizes: [
@@ -524,7 +524,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Valla',
       price: 25000,
-      desc: 'Valla profesional optimizada para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Dominio visual en la ciudad. Estrategia gráfica de alto impacto para publicidad exterior que posiciona tu marca en la mente de miles de personas.',
       image: 'assets/Valla.png',
       ingredients: [], 
       sizes: [
@@ -537,7 +537,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Infografía',
       price: 70000,
-      desc: 'Infografía profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Datos que cobran vida. Simplificamos información compleja a través de un diseño visual atractivo, fácil de entender y de compartir.',
       image: 'assets/Infografia.png',
       ingredients: [], 
       sizes: [
@@ -550,7 +550,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Microperforado',
       price: 15000,
-      desc: 'Microperforado profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Privacidad y publicidad en uno. Diseño especializado para vidrios que permite ver hacia afuera mientras muestra tu marca con total nitidez al exterior.',
       image: 'assets/Microperforado.png',
       ingredients: [], 
       sizes: [
@@ -561,9 +561,9 @@ const products = [
     {
       id: 'cv2',
       category: 'hamburguesas', 
-      title: 'Currículum',
+      title: 'Curriculum',
       price: 20000,
-      desc: 'Curriculum profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Tu perfil profesional al siguiente nivel. Diseñamos hojas de vida modernas y estructuradas que destacan tus habilidades y te ayudan a conseguir el empleo ideal.',
       image: 'assets/Curriculum.png',
       ingredients: [], 
       sizes: [
@@ -574,9 +574,9 @@ const products = [
     {
       id: 'rf1',
       category: 'hamburguesas', 
-      title: 'Retoque Fotográfico',
+      title: 'Retoque',
       price: 15000,
-      desc: 'Retoque Fotográfico profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Perfección en cada detalle. Edición fotográfica profesional para corregir iluminación, color e imperfecciones, logrando imágenes de catálogo.',
       image: 'assets/Retoque.png',
       ingredients: [], 
       sizes: [
@@ -587,9 +587,9 @@ const products = [
     {
       id: 'fm1',
       category: 'hamburguesas', 
-      title: 'Foto montaje',
+      title: 'Foto Montaje',
       price: 20000,
-      desc: 'Foto Montaje profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Crea realidades imposibles. Combinamos imágenes con precisión técnica para publicidad, portadas o composiciones creativas de alto nivel.',
       image: 'assets/Fotomontaje.png',
       ingredients: [], 
       sizes: [
@@ -602,7 +602,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Botón',
       price: 12000,
-      desc: 'Botón profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Publicidad para llevar puesta. Diseños circulares optimizados para pines y botones promocionales que tus clientes lucirán con gusto.',
       image: 'assets/Boton.png',
       ingredients: [], 
       sizes: [
@@ -615,11 +615,11 @@ const products = [
       category: 'hamburguesas', 
       title: 'Aviso',
       price: 15000,
-      desc: 'Aviso profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'La cara de tu local. Diseñamos el letrero principal de tu negocio para que proyecte la personalidad y la calidad de los servicios que ofreces.',
       image: 'assets/Aviso.png',
       ingredients: [], 
       sizes: [
-        { id: 'av1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Avisos.png' }
+        { id: 'av1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Aviso.png' }
       ]
     },
 
@@ -628,7 +628,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Señalización',
       price: 8000,
-      desc: 'Señalizacion profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Guía a tus clientes con claridad. Sistemas visuales funcionales y estéticos diseñados para organizar el flujo de personas en oficinas y bodegas.',
       image: 'assets/Señalizacion.png',
       ingredients: [], 
       sizes: [
@@ -641,7 +641,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Edición de Video',
       price: 42000,
-      desc: 'Edición de video profesional con acabados de alta calidad. Optimizado para redes sociales, publicidad y plataformas digitales.',
+      desc: 'Cuenta tu historia con ritmo. Montaje profesional de clips para anuncios o redes sociales con acabados cinematográficos y sonido optimizado.',
       image: 'assets/Video.png',
       ingredients: [], 
       sizes: [
@@ -654,7 +654,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Personaje',
       price: 70000,
-      desc: 'Creación de personaje corporativo. Diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Dale una cara a tu empresa. Creación de mascotas o personajes corporativos diseñados para generar cercanía y recordación de marca.',
       image: 'assets/Personaje.png',
       ingredients: [], 
       sizes: [
@@ -665,9 +665,9 @@ const products = [
     {
       id: 'ani1',
       category: 'hamburguesas', 
-      title: 'Animación 2D / 3D',
+      title: 'Animación 2D/3D',
       price: 12000,
-      desc: 'Animación profesional en alta fidelidad. Formatos listos para brillar en plataformas digitales, publicidad y redes sociales.',
+      desc: 'Tu marca en movimiento. Gráficos animados que dan vida a tu logo o explican tus servicios de forma dinámica y moderna.',
       image: 'assets/Animacion.png',
       ingredients: [], 
       sizes: [
@@ -680,7 +680,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Banner Fijo Web',
       price: 30000,
-      desc: 'Banner fijo profesional optimizado para web. Archivos en alta resolución y formatos listos para ecosistemas digitales.',
+      desc: 'Publicidad digital de alto impacto. Piezas estáticas diseñadas para captar la atención de los visitantes en tu sitio web o blogs externos.',
       image: 'assets/Banner1.png',
       ingredients: [], 
       sizes: [
@@ -693,7 +693,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Banner Animado Web',
       price: 95000,
-      desc: 'Banner animado profesional optimizado para web. Archivos en alta resolución y formatos listos para dinamizar ecosistemas digitales.',
+      desc: 'Dinamismo para tus campañas. Anuncios en movimiento diseñados para aumentar el CTR y mejorar la estética de tus plataformas digitales.',
       image: 'assets/Banner2.png',
       ingredients: [], 
       sizes: [
@@ -706,7 +706,7 @@ const products = [
       category: 'hamburguesas', 
       title: 'Hablador',
       price: 15000,
-      desc: 'Hablador profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      desc: 'Tu vendedor silencioso. Piezas de mesa diseñadas para destacar promociones especiales o información importante justo frente al cliente.',
       image: 'assets/Hablador.png',
       ingredients: [], 
       sizes: [
